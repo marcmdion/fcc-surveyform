@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basketball Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div><h1 id="title">🏀 Basketball Survey Form 🏀</h1></div>
+	
+	<div class="formcover">
+
+		<div><p id="description">Basketball Shooting Skills Improvement Survey</p></div>
+
+		<div>
+			<form id="survey-form">
+
+				<div>
+					<div class="leftside">
+						<label for="name" id="name-label">* Name:</label>
+					</div>
+
+					<div class="rightside">
+						<input type="text" name="Name" id="name" required placeholder="Enter your name here." class="textfield">
+					</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label for="email" id="email-label" >* Email:</label>
+					</div>
+					<div class="rightside">
+						<input type="email" name="Email" id="email" required placeholder="Enter your Email here." class="textfield" >
+					</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label for="number" id="number-label">* Age:</label>
+					</div>
+					<div class="rightside">
+						<input type="number" name="Age" id="number" required placeholder="Enter your Age here." min="1" max="99" class="textfield" >
+					</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label for="dropdown" >Which shooting skill you want to improve on?</label>
+					</div>
+					
+					<div class="rightside">
+						<select id="dropdown" name="shootingskill" class="dropdown">
+							<option disabled value>Select an option</option>
+							<option value="shortrange">Short Range</option>
+							<option value="midrange">Mid Range</option>
+							<option value="longrange">Long Range</option>
+							<option value="dametime">Dame Time!</option>
+						</select>
+					</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label for="position">What is your main position?</label>
+					</div>
+					<div  class="rightside">
+						<div>
+							<input type="radio" name="position" value="pg">Point Guard
+						</div>
+						<div>
+							<input type="radio" name="position" value="sg">Shooting Guard
+						</div>
+						<div>
+							<input type="radio" name="position" value="sf">Small Forward
+						</div>
+						<div>
+							<input type="radio" name="position" value="pf">Power Forward
+						</div>
+						<div>
+							<input type="radio" name="position" value="c">Center
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label >Who are your favourite players?</label>
+					</div>
+
+					<div class="rightside checkbox">
+						<ul style="list-style: none; top: 0;" >
+							<li><label for="player1"><input id="player1" type="checkbox" name="players" value="dirk">Dirk Nowitzki </label></li>
+							<li><label for="player2"><input id="player2" type="checkbox" name="players" value="mike">Michael Jordan </label></li>
+							<li><label for="player3"><input id="player3" type="checkbox" name="players" value="Kobe">Kobe Bryant </label></li>
+							<li><label for="player4"><input id="player4" type="checkbox" name="players" value="steph">Stephen Curry </label></li>
+							<li><label for="player5"><input id="player5" type="checkbox" name="players" value="reem">Kareem Abdul-Jabaar </label></li>
+							<li><label for="player6"><input id="player6" type="checkbox" name="players" value="tracy">Tracy McGrady </label></li>
+						</ul>
+				</div>
+				</div>
+
+				<div>
+					<div class="leftside">
+						<label for="comments">Any comments or special request?</label>
+					</div>
+
+					<div class="rightside">
+						<textarea id="comments"  style="height:50px; resize:vertical;" name="comment" placeholder="Enter your comment here..." class="textfield" ></textarea>
+					</div>
+				</div>
+
+				<div class="button">
+				 <button id="submit" type="submit">Submit</button>
+				 </div>
+
+			</form>
+
+
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>

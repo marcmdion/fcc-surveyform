@@ -1,0 +1,118 @@
+body {
+	background-color: #FA5A1B;
+	font-family: Roboto;
+}
+
+#title {
+	text-align: center;
+}
+
+.formcover {
+background-color: rgb(250, 250, 250);
+margin: 0 auto;
+width: 75%;
+padding-bottom: 30px;
+border-radius: 10px;
+}
+
+p {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#survey-form {
+margin: 0 auto;
+
+}
+
+.textfield {
+	width: 300px;
+}
+
+.leftside {
+display: inline-block;
+width: 40%;
+text-align: right;
+/*background-color: red;*/
+vertical-align: top;
+padding: 15px;
+}
+
+.rightside {
+display: inline-block;
+width: 40%;
+text-align: left;
+/*background-color: lightblue;*/
+vertical-align: middle;
+padding: 10px;
+/*border: 2px solid black;*/
+}
+
+.dropdown {
+	width: 200px;
+}
+
+.checkbox {
+	position: relative;
+	padding: 0;
+}
+
+
+ul {
+	padding-left: 0px;
+	top: 0;
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+button {
+	background-color: #E2845E;
+	color: #501701;
+	padding: 10px 15px;
+	font-size: 20px;
+	border-color: #BA4314;
+	border-radius: 25px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+
+
+
+.button {
+	text-align: center;
+
+}
+
+@media only screen and (max-width: 750px) {
+  .leftside {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+  .rightside{
+    width: 80%;
+    float: left;
+    padding: 5px;
+  }
+  .textfield {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+
+  ul {
+  	padding-left: 20px;
+  	padding-top: 0px;
+  }
+
+  .button {
+    width: 100%;
+    display: block;
+  }
+}
